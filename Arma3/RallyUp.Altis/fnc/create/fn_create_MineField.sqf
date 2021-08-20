@@ -38,6 +38,9 @@
 					_PickType = RallyUp_MinesAT select floor random count RallyUp_MinesAT;
 					_Mine = _PickType createVehicle _SpawnPosition;
 				};
+				
+				
+				
 			};
 			
 _markerDebug = createMarkerLocal [format["RallyUp_%1",(random 2000)],position _Mine];
@@ -45,7 +48,6 @@ _markerDebug setMarkerShapelocal "ICON";
 _markerDebug setMarkerText _PickType;	
 _markerDebug setMarkerTypelocal "mil_dot";
 _markerDebug setMarkercolor "ColorRed";
-
 		
 			
 		};			
